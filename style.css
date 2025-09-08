@@ -176,7 +176,6 @@ html {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -198,7 +197,6 @@ footer .socials a {
   font-size: 20px;
 }
 
-/* ===== About ===== */
 .about {
   padding: 100px 180px;
 }
@@ -225,16 +223,15 @@ footer .socials a {
   font-weight: 500;
 }
 
-/* صور مائلة بإطار سميك */
 .about-photos {
   position: relative;
-  min-height: 520px; /* مساحة تكديس الصورتين */
+  min-height: 520px;
 }
 
 .polaroid {
   position: absolute;
   width: 320px;
-  background: #D9D9D9;           /* إطار خارجي فاتح */
+  background: #D9D9D9;
   padding: 18px;
   border-radius: 6px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
@@ -247,21 +244,19 @@ footer .socials a {
   border-radius: 3px;
 }
 
-/* الأولى أعلى اليمين */
 .polaroid.tilt-right {
   top: 20px;
   right: 10px;
   transform: rotate(12deg);
 }
 
-/* الثانية أسفل اليسار */
 .polaroid.tilt-left {
   width: 300px;
   left: 30px;
   bottom: 10px;
   transform: rotate(-14deg);
 }
-/* الثالثة أسفل اليمين */
+
 .polaroid.tilt-right-bottom {
   width: 280px;
   right: -20px;
@@ -269,16 +264,11 @@ footer .socials a {
   transform: rotate(12deg);
 }
 
-
-
-
 .skills-text h2 {
   padding: 40px 180px;
   color: #683A45;
 }
 
-
-/* ===== Sections with pills ===== */
 .pill-section {
   padding: 50px 40px 10px;
   text-align: center;
@@ -295,7 +285,7 @@ footer .socials a {
 .pill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 18px;                 /* صفوف وأعمدة */
+  gap: 16px 18px;
   justify-content: center;
   max-width: 980px;
   margin: 0 auto 10px;
@@ -307,29 +297,28 @@ footer .socials a {
   display: inline-block;
   padding: 10px 18px;
   border-radius: 9999px;
-  background: #683A45;           /* نفس لون الترويسة */
+  background: #683A45;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
-  box-shadow: 0 4px 0 #cdbdc1;    /* ظل سفلي زي زر */
+  box-shadow: 0 4px 0 #cdbdc1;
   border: 1px solid rgba(255,255,255,0.4);
   white-space: nowrap;
-  cursor: pointer;               /* يبين أنه قابل للضغط */
+  cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .pill:hover {
-  background: #815b64;           /* أفتح شوي */
-  transform: translateY(-3px);   /* يطلع لفوق شوي */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);  /* ظل ناعم */
+  background: #815b64;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .pill:active {
-  transform: translateY(0);      /* يرجع مكانه عند الكبس */
+  transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 980px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -370,6 +359,5 @@ footer .socials a {
 }
 
 .skills{
-    padding: 100px 180px;
-    
+  padding: 100px 180px;
 }
